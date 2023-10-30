@@ -25,6 +25,13 @@
       <artifactId>ResumeJdbcApp</artifactId>
       <version>1.1</version>
     </dependency>
+
+    <dependency>
+      <groupId>at.favre.lib</groupId>
+      <artifactId>bcrypt</artifactId>
+      <version>0.4.1</version>
+    </dependency>
+
   </dependencies>
 
   <build>

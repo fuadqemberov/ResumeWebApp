@@ -8,20 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0010ee1b-0aee-40f5-b255-6d8a2f1bb483" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Controller/UserDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Resumeapp2_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ResumeWebApp_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Resumeapp2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ResumeWebApp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ResumeWebApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ResumeWebApp_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/java/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ResumeWebApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Controller/UserDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Controller/UserDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Resumeapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Resumeapp.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Resumeapp/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Resumeapp/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Resumeapp/WEB-INF/classes/main/java/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Resumeapp/WEB-INF/classes/com/company/Controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Resumeapp/WEB-INF/classes/com/company/Controller/UserDetailController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Resumeapp/WEB-INF/lib/ResumeJdbcApp-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Resumeapp/WEB-INF/lib/ResumeJdbcApp-1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Resumeapp/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Resumeapp/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Resumeapp2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Controller/UserDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Controller/UserDetailController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Class" />
       </list>
@@ -55,11 +53,14 @@
     </option>
   </component>
   <component name="ProjectId" id="2XKlitnInYcGlaYYWUb3gvV4BAR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,7 +73,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\ResumeWebApp\src\main\webapp\asset" />
+      <recent name="D:\Workspace\ResumeWebApp\src\main\webapp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.company.Filter" />
       <recent name="com.company.Controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -300,6 +306,7 @@
       <workItem from="1698481468538" duration="8184000" />
       <workItem from="1698516302973" duration="6835000" />
       <workItem from="1698556868757" duration="4761000" />
+      <workItem from="1698640218653" duration="10476000" />
     </task>
     <servers />
   </component>

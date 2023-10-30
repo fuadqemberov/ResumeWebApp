@@ -33,23 +33,23 @@ public class UserDetailController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        UserDaoInter userDao = Context.instanceUserDao();
         int id = Integer.valueOf(request.getParameter("id"));
-        String action = request.getParameter("action");
-
-
+        String action=request.getParameter("action");
+        if (action.equals("update")) {
             String name = request.getParameter("name");
             String surname = request.getParameter("surname");
-            String phone = request.getParameter("phone");
-            String email = request.getParameter("email");
 
-            User u = dao.getById(id);
-            u.setName(name);
-            u.setSurname(surname);
-            u.setEmail(email);
-            u.setPhone(phone);
-            u.setId(id);
+            User user = userDao.getById(id);
 
-            dao.updateUser(u);
+            user.setName(name);
+            user.setSurname(surname);
+
+
+            userDao.updateUser(user);
+        }else if(action.equals("delete")){
+            userDao.removeUserById(id);
+        }
 
 
 
