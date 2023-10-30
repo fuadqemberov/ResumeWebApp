@@ -1,8 +1,10 @@
 
 <%@ page import="java.util.List" %>
-<%@ page import="com.mycompany.DaoInter.CountryDaoInter" %>
+
 <%@ page import="com.mycompany.entity.Country" %>
 <%@ page import="com.mycompany.Context.Context" %>
+<%@ page import="com.mycompany.DaoInter.UserDaoInter" %>
+<%@ page import="com.mycompany.entity.User" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,12 +16,12 @@
     </head>
     <body>
         <%
-            CountryDaoInter dao = Context.instanceCountryDao();
-            List<Country> list = dao.getAll();
+            UserDaoInter dao = Context.instanceUserDao();
+            List<User> list = dao.getAll2();
              %>
             
             <div class="form-group">
-                <form action="UserController" method="POST">
+                <form action="userdetail" method="POST">
                 <label for="id">id:</label>
                 <input class="form-control" type="text" name="id" value=""/>
                 
@@ -28,7 +30,7 @@
                 
                 <label for="nationality">Nationality name:</label>
                 <input class="form-control" type="text" name="nationality" value=""/>
-
+                    <input type="hidden" name="action" value="add">
                     <button type="submit" class="btn btn-primary" value="add">Add</button>
                        
                    </form>
@@ -39,28 +41,52 @@
         <table>
             <thead>
             <tr>
-                <th>Country ID</th>
-                <th>Country name</th>
+                <th>User id</th>
+                <th>Name</th>
+                <th> Surname </th>
+                <th>Birth date</th>
+                <th>Phone</th>
+                <th> Email </th>
                 <th> Nationality </th>
             </tr>
             </thead>
             <tbody>
 
             <%
- for(Country c : list){
+ for(User u : list){
             %>
             <tr>
-                <td><%=c.getId()%></td>
-                <td><%=c.getName()%></td>
-                <td><%=c.getNationality()%></td>
+                <td><%=u.getId()%></td>
+                <td><%=u.getName()%></td>
+                <td><%=u.getSurname()%></td>
+                <td><%=u.getBirthDate()%></td>
+                <td><%=u.getPhone()%></td>
+                <td><%=u.getEmail()%></td>
+                <td><%=u.getNationality().getNationality()%></td>
+
+
+
+
                 <td>
-                    <button type="button" name="action" value="delete" class="btn btn-danger">
-                        <i class="bi bi-x-circle"></i>
+
+                    <form action="userdetail" method="POST">
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="id" value="<%=u.getId()%>">
+
+                    <button type="submit" value="delete" class="btn btn-danger">
+                       <i class="bi bi-x-circle"></i>
                     </button>
 
-                    <button type="button" name="action" value="update" class="btn btn-info">
-                        <i class="bi bi-pen-fill"></i>
-                    </button>
+                    </form>
+                    <form action="userdetail" method="GET">
+                        <input type="hidden" name="id" value="<%=u.getId()%>">
+                        <input type="hidden" name="action" value="update">
+
+                        <button type="submit"  value="update" class="btn btn-info">
+                            <i class="bi bi-pen-fill"></i>
+                        </button>
+                    </form>
+
                 </td>
 
             </tr>
